@@ -92,7 +92,14 @@ nav ul {
   padding: 2rem;
 }
 
-/*Benefit section*/
+/*Location section*/
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("./image/new-york-page.png");
+  background-size: 75%;
+  background-position: center;
+}
 
 /*adding media query*/
 @media screen and (max-width: 932px) {
