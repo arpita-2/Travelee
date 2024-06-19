@@ -91,3 +91,14 @@ nav ul {
 .hero-location h3 {
   padding: 2rem;
 }
+
+/*adding media query*/
+@media screen and (max-width: 932px) {
+  nav {
+    text-align: center;
+  }
+
+  #logo {
+    padding: 2rem;
+  }
+}
