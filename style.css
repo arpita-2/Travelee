@@ -25,3 +25,36 @@ h2 {
 h3 {
   font-size: 3rem;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Navigation bar with location styling*/
+
+.main-head {
+  background-color: #131c27;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 40rem;
+  list-style: none;
+}
+
+#logo {
+  flex: 2 1 40rem;
+}
