@@ -94,6 +94,9 @@ nav ul {
 
 /*adding media query*/
 @media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
   nav {
     text-align: center;
   }
