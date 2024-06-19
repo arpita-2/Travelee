@@ -58,3 +58,22 @@ nav ul {
 #logo {
   flex: 2 1 40rem;
 }
+
+.hero-location {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("/image/landing-page.jpg");
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-location h3 {
+  padding: 2rem;
+}
