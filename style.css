@@ -8,6 +8,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 h1 {
   font-size: 2.5rem;
 }
@@ -31,6 +35,13 @@ a {
   color: white;
 }
 
+button {
+  padding: 2rem 6rem;
+  border: none;
+  background: #4c6e97;
+  color: white;
+  cursor: pointer;
+}
 /*Navigation bar with location styling*/
 
 .main-head {
