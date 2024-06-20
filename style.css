@@ -109,6 +109,7 @@ nav ul {
   display: flex;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .location-header {
@@ -132,17 +133,19 @@ nav ul {
 
 .cloud {
   position: absolute;
-  top: 0%;
-  right: -10%;
+  top: -2%;
+  right: -12%;
 }
 
 .moving-cloud-1 {
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
 }
 
 .moving-cloud-2 {
-  top: 20%;
-  z-index: -1;
+  top: 15%;
+  z-index: -2;
   opacity: 0.3rem;
+  animation: cloudAnimation 3.5s infinite alternate ease-in-out;
 }
 
 @keyframes buttonAnimation {
@@ -158,6 +161,16 @@ nav ul {
     background-color: #011b3b;
   }
 }
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+
+  to {
+    transform: translate(0%, 0%);
+  }
+}
 /*adding media query*/
 @media screen and (max-width: 932px) {
   html {
@@ -169,5 +182,23 @@ nav ul {
 
   #logo {
     padding: 2rem;
+  }
+
+  .cloud {
+    height: 40rem;
+    pointer-events: none;
+  }
+
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+
+  .moving-cloud-2 {
+    z-index: -2;
+  }
+
+  .location-header h3 {
+    background: rgb(19, 28, 30, 0.8);
+    -webkit-text-fill-color: white;
   }
 }
