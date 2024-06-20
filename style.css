@@ -43,6 +43,8 @@ button {
   color: white;
   cursor: pointer;
   transition: background 0.5s ease-in-out;
+  animation: buttonAnimation 2s infinite;
+  animation-iteration-count: 2;
 }
 
 button:hover {
@@ -141,6 +143,20 @@ nav ul {
   top: 20%;
   z-index: -1;
   opacity: 0.3rem;
+}
+
+@keyframes buttonAnimation {
+  0% {
+    background-color: #4c6e97;
+  }
+
+  25% {
+    background-color: #6d7c8e;
+  }
+
+  100% {
+    background-color: #011b3b;
+  }
 }
 /*adding media query*/
 @media screen and (max-width: 932px) {
